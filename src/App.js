@@ -173,29 +173,29 @@ class App extends Component {
                   </tbody></table>
                 </CardText>
               </Card><br/>
-
-              <Card className="card">
-                <CardTitle className="cardTitle" title="Beat Maker" />
-                <CardText className="cardText">
-                  <table><tbody>
-                    <tr>
-                      <td><Avatar size={52} className="marg" src="https://lh3.googleusercontent.com/p7L13rD58bcY0HZ1gczQ0C-BqNqRTefFI3fbxIe9Qid4LPBDiTo0EzDTHruagjHj3HWy=w104-rw"/></td>
-                      <td>I produce beats! <a href="https://soundcloud.com/themostcrispy">Check out my Soundcloud</a>. </td>
-                    </tr>
-                  </tbody></table>
-                </CardText>
-              </Card><br/>
               <Card className="card">
                 <CardTitle className="cardTitle" title="SensorMusic" />
                 <CardText className="cardText">
                   <table><tbody>
                     <tr>
-                      <td><img className="icon" src="/ic/music.png"/></td>
+                      <td><img className="icon" style={{opacity: 1.0}} src="/ic/music.png"/></td>
                       <td><a href="https://github.com/theak/sensormusic">SensorMusic</a> is an Android app for using the sensors on your phone (accel, gyro, light, mag) to make music. It uses the new MIDI APIs in Android Marshmallow.</td>
                     </tr>
                   </tbody></table>
                 </CardText>
-              </Card>
+              </Card><br/>
+              
+              <Card className="card">
+                <CardTitle className="cardTitle" title="Beat Maker" />
+                <CardText className="cardText">
+                  <table><tbody>
+                    <tr>
+                      <td><img className="icon" style={{opacity: 1.0}} src="https://lh3.googleusercontent.com/p7L13rD58bcY0HZ1gczQ0C-BqNqRTefFI3fbxIe9Qid4LPBDiTo0EzDTHruagjHj3HWy=w104-rw"/></td>
+                      <td>I produce beats! <a href="https://soundcloud.com/themostcrispy">Check out my Soundcloud</a>. </td>
+                    </tr>
+                  </tbody></table>
+                </CardText>
+              </Card><br/>
             </div>
           </SwipeableViews>
         </div>

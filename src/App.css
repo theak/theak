@@ -71,7 +71,6 @@
 }
 .marg {
   margin: 10px 25px 10px 15px;
-  opacity: 0.5;
 }
 .icon {
   width: 52px !important;
@@ -86,7 +85,7 @@ p {
   text-align: center;
 }
 img.ss {
-  padding: 10px;
+  padding: 15px;
   width: 50% !important;
   min-width: 50% !important;
   max-width: 50% !important;
