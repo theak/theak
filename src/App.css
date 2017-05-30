@@ -48,6 +48,9 @@
 .card {
   margin-top: 20px !important;
 }
+.card:hover {
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23) !important;
+}
 .cardTitle {
   letter-spacing: -1px;
 }
@@ -84,7 +87,7 @@ p {
 }
 img.ss {
   padding: 10px;
-  width: 55% !important;
-  min-width: 55% !important;
-  max-width: 55% !important;
+  width: 50% !important;
+  min-width: 50% !important;
+  max-width: 50% !important;
 }

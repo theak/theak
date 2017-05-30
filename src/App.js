@@ -154,7 +154,6 @@ class App extends Component {
                 <CardText className="cardText">
                   <table><tbody>
                     <tr>
-                      <td><Avatar size={52} className="marg" src="https://lh3.googleusercontent.com/vSDZr_xhSAnsrVKXWjaHG1h-fxfiWI18ZwMyB-ZbHWKaMUdtarY7lvvcTNoL5sOrdQ=w104-rw"/></td>
                       <td><a href="https://justbeamit.com/">JustBeamIt.com</a> makes it easy to stream files to friends, directly from within the browser, with no size limits. Featured on <a href="http://lifehacker.com/5849783/justbeamit-makes-transferring-large-files-super-easy">Lifehacker</a> and <a href="http://www.addictivetips.com/internet-tips/justbeamit-offers-peer-to-peer-p2p-file-sharing-without-signup/">AddictiveTips</a>, and continues to get ~1k Daily Active Users.
                       </td>
                     </tr>
@@ -164,12 +163,11 @@ class App extends Component {
               <Card className="card">
                 <CardTitle className="cardTitle" title="iWantTheTime.com" />
                 <CardMedia style={{textAlign: 'center'}}>
-                  <a href="https://iWantTheTime.com/"><img className="ss" src="/ic/iwtt.png"/></a>
+                  <a href="https://www.iWantTheTime.com/"><img className="ss" src="/ic/iwtt.png"/></a>
                 </CardMedia>
                 <CardText className="cardText">
                   <table><tbody>
                     <tr>
-                      <td><img className="icon" src="/ic/clock.png" /></td>
                       <td><a href="https://www.iWantTheTime.com">iWantTheTime.com</a> lets you track time and weather around the world. Uses React, IP Geolocation, Google Places APIs, and material design.</td>
                     </tr>
                   </tbody></table>
@@ -182,7 +180,7 @@ class App extends Component {
                   <table><tbody>
                     <tr>
                       <td><Avatar size={52} className="marg" src="https://lh3.googleusercontent.com/p7L13rD58bcY0HZ1gczQ0C-BqNqRTefFI3fbxIe9Qid4LPBDiTo0EzDTHruagjHj3HWy=w104-rw"/></td>
-                      <td>I produce beats. <a href="https://soundcloud.com/themostcrispy">Check out my Soundcloud</a>. </td>
+                      <td>I produce beats! <a href="https://soundcloud.com/themostcrispy">Check out my Soundcloud</a>. </td>
                     </tr>
                   </tbody></table>
                 </CardText>
