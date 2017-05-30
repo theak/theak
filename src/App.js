@@ -4,36 +4,30 @@ import {Tabs, Tab} from 'material-ui/Tabs';
 import SwipeableViews from 'react-swipeable-views';
 
 import Avatar from 'material-ui/Avatar';
-import {Card, CardActions, CardHeader, CardMedia, CardTitle, CardText} from 'material-ui/Card';
-import FlatButton from 'material-ui/FlatButton';
+import {Card, CardMedia, CardTitle, CardText} from 'material-ui/Card';
 import PlaylistAddCheck from 'material-ui/svg-icons/av/playlist-add-check';
-import MusicVideo from 'material-ui/svg-icons/av/music-video';
-import Sms from 'material-ui/svg-icons/notification/sms';
 import DirectionsRun from 'material-ui/svg-icons/maps/directions-run';
 import CloudCircle from 'material-ui/svg-icons/file/cloud-circle';
-import Timelapse from 'material-ui/svg-icons/image/timelapse';
 import Print from 'material-ui/svg-icons/action/print';
 import './App.css';
 
-const localKey = 'tabIndex';
+//const localKey = 'tabIndex';
+const hashes = ['main-projects', 'side-projects'];
 
 class App extends Component {
   constructor() {
     super();
 
-    const lastTab = localStorage.getItem(localKey);
-    this.state = {tabIndex: lastTab ? parseInt(lastTab) : 0};
+    const tab = hashes.indexOf(window.location.hash.replace('#', ''));
+    this.state = {tabIndex: (tab > -1) ? tab : 0};
 
     this.handleChange = this.handleChange.bind(this);
   }
   handleChange(value) {
     this.setState({tabIndex: value});
-    localStorage.setItem(localKey, value);
+    window.location.hash = hashes[value];
   }
   render() {
-    const btnStyle = {
-      color: '#0d47a1', fontWeight: 600, paddingLeft: 0
-    };
     return (
       <div className="App">
         <div className="App-header">
@@ -42,7 +36,7 @@ class App extends Component {
             <h3>Product Manager • Software Engineer • Beat Maker</h3>
             <div className="flexbox">
             <div className="hello">
-              Hello, I'm a Product Manager at Google working on the Android team, and this is my website.
+              Hello, I'm a Product Manager at Google working on the Android team. This is my website.
             </div>
             <div className="photo">
               <MuiThemeProvider>
