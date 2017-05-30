@@ -1,24 +1,78 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
-}
-
 .App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
+  background-color: #333;
+  padding: 30px;
+  color: #FAFAFA;
+  padding-bottom: 0px;
+}
+.hello {
+  width: 60%;
+  font-size: 22px;
+  padding: 50px;
+  margin-right: -50px;
+}
+.photo {
+  text-align: center;
+  margin-top: 0px;
+  padding-left: 50px;
+}
+@media(max-width: 600px) {
+  .photo{display: none};
+}
+.tabs>div {
+  background-color: #222 !important;
+}
+.container {
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.flexbox {
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.App-intro {
-  font-size: large;
+/* Card Stuff */
+.logo {
+  height: 32px;
+  filter: grayscale(30%);
 }
-
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+.logo.big {
+  height: 42px;
 }
+.jobtitle {
+  margin-left: 10px;
+  font-size: 18px;
+  opacity: 0.6 !important;
+  display: table-cell;
+  vertical-align: middle;
+}
+.card {
+  margin-top: 20px !important;
+}
+.cardTitle {
+  letter-spacing: -1px;
+}
+.content {
+  padding: 50px;
+  padding-top: 30px;
+}
+.cardText {
+  padding-top: 0px !important;
+  font-size: 18px !important;
+  font-family: 'Roboto', sans-serif;
+}
+.cardText a, .cardText a:visited {
+  font-weight: bold;
+  letter-spacing: -1px;
+  text-decoration: none;
+  color: #1a237e;
+}
+.icon {
+  width: 52px !important;
+  height: 52px !important;
+  padding: 10px 25px 10px 15px;
+  opacity: 0.5;
+  transition: opacity 1s ease;
+}
+tr {cursor: default; opacity: 0.9;}
+tr:hover>td>div {opacity: 1.0}
