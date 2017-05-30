@@ -8,6 +8,7 @@ import {Card, CardMedia, CardTitle, CardText} from 'material-ui/Card';
 import PlaylistAddCheck from 'material-ui/svg-icons/av/playlist-add-check';
 import DirectionsRun from 'material-ui/svg-icons/maps/directions-run';
 import CloudCircle from 'material-ui/svg-icons/file/cloud-circle';
+import CompareArrows from 'material-ui/svg-icons/action/compare-arrows';
 import Print from 'material-ui/svg-icons/action/print';
 import './App.css';
 
@@ -132,7 +133,7 @@ class App extends Component {
                 <CardText className="cardText">
                   <table><tbody>
                     <tr>
-                      <td><img className="icon" src="https://www.gstatic.com/images/icons/material/system/2x/settings_ethernet_black_48dp.png"/></td>
+                      <td><CompareArrows className="icon"/></td>
                       <td>Implemented support for parallelized network requests to speed up Google's structured data crawling infrastructrure.</td>
                     </tr>
                   </tbody></table>
