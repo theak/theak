@@ -32,6 +32,9 @@
 }
 
 /* Card Stuff */
+.btn {
+
+}
 .logo {
   height: 32px;
   filter: grayscale(30%);
@@ -39,12 +42,8 @@
 .logo.big {
   height: 42px;
 }
-.jobtitle {
-  margin-left: 10px;
-  font-size: 18px;
-  opacity: 0.6 !important;
-  display: table-cell;
-  vertical-align: middle;
+.buttons {
+  margin-top: 5px;
 }
 .card {
   margin-top: 20px !important;
@@ -67,6 +66,10 @@
   text-decoration: none;
   color: #1a237e;
 }
+.marg {
+  margin: 10px 25px 10px 15px;
+  opacity: 0.5;
+}
 .icon {
   width: 52px !important;
   height: 52px !important;
@@ -76,3 +79,12 @@
 }
 tr {cursor: default; opacity: 0.9;}
 tr:hover>td>div {opacity: 1.0}
+p {
+  text-align: center;
+}
+img.ss {
+  padding: 10px;
+  width: 55% !important;
+  min-width: 55% !important;
+  max-width: 55% !important;
+}
