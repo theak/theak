@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import {Tabs, Tab} from 'material-ui/Tabs';
 import SwipeableViews from 'react-swipeable-views';
+import {List, ListItem} from 'material-ui/List';
 
 import Avatar from 'material-ui/Avatar';
 import {Card, CardMedia, CardTitle, CardText} from 'material-ui/Card';
@@ -37,7 +38,7 @@ class App extends Component {
             <h3>Product Manager • Software Engineer • Beat Maker</h3>
             <div className="flexbox">
             <div className="hello">
-              Hello, I'm a Product Manager at Google working on the Android team. This is my website.
+              Hello! I'm a Product Manager at Google working on Android. This is my website.
             </div>
             <div className="photo">
               <MuiThemeProvider>
@@ -70,12 +71,12 @@ class App extends Component {
                       <td><img className="icon" src="/ic/els.png"/></td>
                       <td>I created the <a href="https://blog.google/topics/google-europe/helping-emergency-services-find-you/">
                       Emergency Location Service
-                      </a> to deliver significantly faster and more accurate locations to emergency services.
+                      </a> to deliver faster and more accurate locations to emergency services <a href="https://thenextweb.com/eu/2017/03/10/googles-clever-tool-for-emergency-services-is-now-saving-lives/">and save lives</a>.
                       </td>
                     </tr>
                     <tr>
                       <td><PlaylistAddCheck className="icon"/></td>
-                      <td>I introduced <a href="https://youtu.be/oZxwTiMH0FM?t=137">Autofill in Android O</a>, letting users seamlessly fill out credit cards, addresses, and logins in native apps with a single tap.</td>
+                      <td>I introduced <a href="https://youtu.be/oZxwTiMH0FM?t=137">Autofill to Android O</a>, letting users seamlessly fill out credit cards, addresses, and logins in native apps with a single tap.</td>
                     </tr>
                     <tr>
                       <td><img className="icon" src="/ic/nearby.png"/></td>
@@ -83,7 +84,7 @@ class App extends Component {
                     </tr>
                     <tr>
                       <td><DirectionsRun className="icon"/></td>
-                      <td>I led <a href="https://developers.google.com/android/reference/com/google/android/gms/location/DetectedActivity">Activity Recognition</a>, using phone sensors to detect what the user is doing, enabling Google Fit and parking in Google Now, and available as a public API.</td>
+                      <td>I worked on <a href="https://developers.google.com/android/reference/com/google/android/gms/location/DetectedActivity">Activity Recognition</a>, using phone sensors to classify user activity. This enables Google Fit, the Google Now parking card, and is also available as an API.</td>
                     </tr>
                   </tbody></table>
                 </CardText>
@@ -95,8 +96,8 @@ class App extends Component {
                   <table><tbody>
                     <tr>
                       <td><CloudCircle className="icon"/></td>
-                      <td>I led development of the <a href="https://console.cloud.google.com">Google Cloud Console
-                      </a>, unifying all of Google's cloud offerings and APIs into a redesigned developer-facing console.</td>
+                      <td>I led creation and development of the <a href="https://console.cloud.google.com">Google Cloud Console
+                      </a>, unifying Google's cloud offerings and APIs into a redesigned experience for developers.</td>
                     </tr>
                   </tbody></table>
                 </CardText>
@@ -108,12 +109,12 @@ class App extends Component {
                   <table><tbody>
                     <tr>
                       <td><Print className="icon"/></td>
-                      <td>I brought <a href="https://googleblog.blogspot.com/2011/12/google-cloud-print-picks-up-steam.html">cloud-ready printers to market</a>, and helped get cloud printing natively integrated into Chrome, Chrome OS, and Android.</td>
+                      <td>I helped bring the first <a href="https://googleblog.blogspot.com/2011/12/google-cloud-print-picks-up-steam.html">cloud-ready printers to market</a>, and brought native cloud printing support to Chrome and Chrome OS.</td>
                     </tr>
                   </tbody></table>
                 </CardText>
-              </Card>
-              <br/><br/>
+              </Card><br/><br/>
+
               <img className="big logo" src="https://captricity.com/static/images/new-site/captricity-logo.png"/>
               <Card className="card">
                 <CardTitle className="cardTitle" title="Software Engineer" />
@@ -121,7 +122,7 @@ class App extends Component {
                   <table><tbody>
                     <tr>
                       <td><img className="icon" src="https://www.gstatic.com/images/icons/material/system/2x/settings_black_48dp.png"/></td>
-                      <td>First hire at <a href="https://captricity.com/">Captricity</a>. Built a system to automate data entry of paper forms using mechanical turk, based on my <a href="http://db.cs.berkeley.edu/papers/dev12-shreddr.pdf">published research</a>.</td>
+                      <td>First hire at <a href="https://captricity.com/">Captricity</a>. Built a system to automate data entry of paper forms using mechanical turk.</td>
                     </tr>
                   </tbody></table>
                 </CardText>
@@ -139,6 +140,28 @@ class App extends Component {
                   </tbody></table>
                 </CardText>
               </Card><br/><br/>
+
+              <img className="logo big" src="/ic/berkeley.png"/>
+              <Card className="card">
+                <CardTitle className="cardTitle" title="Publications" />
+                <CardText className="cardText">
+                  <List>
+                    <ListItem innerDivStyle={{padding: 10}}
+                        href="http://dl.acm.org/citation.cfm?id=2160605"
+                        primaryText="Shreddr: pipelined paper digitization for low-resource organizations"
+                        secondaryText="2012 - ACM Dev"/>
+                    <ListItem innerDivStyle={{padding: 10}}
+                        href="http://dl.acm.org/citation.cfm?id=2007210"
+                        primaryText="Exploring schema repositories with Schemr"
+                        secondaryText="2011 - ACM Sigmod"/>
+                    <ListItem innerDivStyle={{padding: 10}}
+                        href="http://dl.acm.org/citation.cfm?id=1807285"
+                        primaryText="OpenII: an open source information integration toolkit"
+                        secondaryText="2010 - ACM Sigmod"/>
+                  </List>
+                </CardText>
+              </Card>
+
             </div>
             <div className="content">
               <Card className="card">
@@ -174,7 +197,7 @@ class App extends Component {
                   <table><tbody>
                     <tr>
                       <td><img className="icon" style={{opacity: 1.0}} src="/ic/music.png"/></td>
-                      <td><a href="https://github.com/theak/sensormusic">SensorMusic</a> is an Android app for using the sensors on your phone (accel, gyro, light, mag) to make music. It uses the new MIDI APIs in Android Marshmallow.</td>
+                      <td><a href="https://github.com/theak/sensormusic">SensorMusic</a> is an Android app for using the sensors on your phone (accel, gyro, light, mag) as a MIDI controller to make music.</td>
                     </tr>
                   </tbody></table>
                 </CardText>

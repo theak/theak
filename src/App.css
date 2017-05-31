@@ -14,9 +14,13 @@
   text-align: center;
   margin-top: 0px;
   padding-left: 50px;
+  transition: all ease 0.5s;
 }
 @media(max-width: 600px) {
   .photo{display: none};
+}
+@media(min-width: 900px) {
+  .photo{margin-top: -50px};
 }
 .tabs>div {
   background-color: #222 !important;
@@ -32,12 +36,9 @@
 }
 
 /* Card Stuff */
-.btn {
-
-}
 .logo {
   height: 32px;
-  filter: grayscale(30%);
+  filter: grayscale(0%);
 }
 .logo.big {
   height: 42px;
@@ -46,7 +47,7 @@
   margin-top: 5px;
 }
 .card {
-  margin-top: 20px !important;
+  margin-top: 10px !important;
 }
 .card:hover {
   box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23) !important;
@@ -60,12 +61,11 @@
 }
 .cardText {
   padding-top: 0px !important;
-  font-size: 18px !important;
+  font-size: 17px !important;
   font-family: 'Roboto', sans-serif;
 }
 .cardText a, .cardText a:visited {
   font-weight: bold;
-  letter-spacing: -1px;
   text-decoration: none;
   color: #1a237e;
 }
@@ -73,8 +73,8 @@
   margin: 10px 25px 10px 15px;
 }
 .icon {
-  width: 52px !important;
-  height: 52px !important;
+  width: 50px !important;
+  height: 50px !important;
   padding: 10px 25px 10px 15px;
   opacity: 0.5;
   transition: opacity 1s ease;
