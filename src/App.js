@@ -7,6 +7,7 @@ import {List, ListItem} from 'material-ui/List';
 import Avatar from 'material-ui/Avatar';
 import {Card, CardMedia, CardTitle, CardText} from 'material-ui/Card';
 import PlaylistAddCheck from 'material-ui/svg-icons/av/playlist-add-check';
+import Keyboard from 'material-ui/svg-icons/hardware/keyboard';
 import DirectionsRun from 'material-ui/svg-icons/maps/directions-run';
 import CloudCircle from 'material-ui/svg-icons/file/cloud-circle';
 import CompareArrows from 'material-ui/svg-icons/action/compare-arrows';
@@ -38,7 +39,7 @@ class App extends Component {
             <h3>Product Manager • Software Engineer • Beat Maker</h3>
             <div className="flexbox">
             <div className="hello">
-              Hello! I'm a Product Manager at Google working on Android. This is my website.
+              Hello! I'm a Product Manager at Google working on Gboard. This is my website.
             </div>
             <div className="photo">
               <MuiThemeProvider>
@@ -52,7 +53,7 @@ class App extends Component {
             <Tabs className="tabs container" onChange={this.handleChange} 
                 inkBarStyle={{backgroundColor: 'rgb(0, 188, 212)', height: 3}}
                 value={this.state.tabIndex}>
-              <Tab label="Main Projects" value={0} />
+              <Tab label="Work Projects" value={0} />
               <Tab label="Side Projects" value={1} />
             </Tabs>
           </MuiThemeProvider>
@@ -62,9 +63,36 @@ class App extends Component {
           
           <SwipeableViews index={this.state.tabIndex} onChangeIndex={this.handleChange}>
             <div className="content">
-              
+              <img className="logo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"/>
               <Card className="card">
-                <CardTitle className="cardTitle" title="Android: Location, Context, Identity" />
+                <CardTitle className="cardTitle" title="Gboard" />
+                <CardText className="cardText">
+                  <table><tbody>
+                    <tr>
+                      <td><Keyboard className="icon"/></td>
+                      <td>I currently work on the Gboard team. My aim is to build a best-in-class input experience on&nbsp;
+                        <a href="https://play.google.com/store/apps/details?id=com.google.android.inputmethod.latin&hl=en_US">Android</a>
+                        &nbsp;and&nbsp;
+                        <a href="https://itunes.apple.com/us/app/gboard/id1091700242?mt=8">iOS</a>.</td>
+                    </tr>
+                  </tbody></table>
+                </CardText>
+              </Card>
+              <br/>
+              <Card className="card">
+                <CardTitle className="cardTitle" title="Android: Auth and Identity" />
+                <CardText className="cardText">
+                  <table><tbody>
+                    <tr>
+                      <td><PlaylistAddCheck className="icon"/></td>
+                      <td>I led the creation of <a href="https://www.cnet.com/how-to/this-setting-makes-entering-passwords-on-android-oreo-a-breeze-autofill/">Autofill in Android Oreo and above</a>, letting users seamlessly fill out credit cards, addresses, and logins in all native apps with a single tap.</td>
+                    </tr>
+                  </tbody></table>
+                </CardText>
+              </Card>
+              <br/>
+              <Card className="card">
+                <CardTitle className="cardTitle" title="Android: Location and Context" />
                 <CardText className="cardText">
                   <table><tbody>
                     <tr>
@@ -73,10 +101,6 @@ class App extends Component {
                       Emergency Location Service
                       </a> to deliver faster and more accurate locations to emergency services <a href="https://thenextweb.com/eu/2017/03/10/googles-clever-tool-for-emergency-services-is-now-saving-lives/">and save lives</a>.
                       </td>
-                    </tr>
-                    <tr>
-                      <td><PlaylistAddCheck className="icon"/></td>
-                      <td>I introduced <a href="https://youtu.be/oZxwTiMH0FM?t=137">Autofill to Android O</a>, letting users seamlessly fill out credit cards, addresses, and logins in native apps with a single tap.</td>
                     </tr>
                     <tr>
                       <td><img className="icon" src="/ic/nearby.png"/></td>
@@ -115,7 +139,7 @@ class App extends Component {
                 </CardText>
               </Card><br/><br/>
 
-              <img className="big logo" src="https://captricity.com/static/images/new-site/captricity-logo.png"/>
+              <img className="big logo" src="/captricity.png"/>
               <Card className="card">
                 <CardTitle className="cardTitle" title="Software Engineer" />
                 <CardText className="cardText">
@@ -172,7 +196,7 @@ class App extends Component {
                 <CardText className="cardText">
                   <table><tbody>
                     <tr>
-                      <td><a href="https://justbeamit.com/">JustBeamIt.com</a> makes it easy to stream files to friends, directly from within the browser, with no size limits. Featured on <a href="http://lifehacker.com/5849783/justbeamit-makes-transferring-large-files-super-easy">Lifehacker</a> and <a href="http://www.addictivetips.com/internet-tips/justbeamit-offers-peer-to-peer-p2p-file-sharing-without-signup/">AddictiveTips</a>, and continues to get ~1k Daily Active Users.
+                      <td><a href="https://justbeamit.com/">JustBeamIt.com</a> makes it easy to stream files to friends, directly from within the browser, with no size limits. Featured on <a href="http://lifehacker.com/5849783/justbeamit-makes-transferring-large-files-super-easy">Lifehacker</a> and <a href="http://www.addictivetips.com/internet-tips/justbeamit-offers-peer-to-peer-p2p-file-sharing-without-signup/">AddictiveTips</a>, has an <a href="https://play.google.com/store/apps/details?id=com.justbeamit">Android app</a>, and continues to get ~1k Daily Active Users.
                       </td>
                     </tr>
                   </tbody></table>

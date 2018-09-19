@@ -16,11 +16,8 @@
   padding-left: 50px;
   transition: all ease 0.5s;
 }
-@media(max-width: 600px) {
+@media(max-width: 840px) {
   .photo{display: none};
-}
-@media(min-width: 900px) {
-  .photo{margin-top: -50px};
 }
 .tabs>div {
   background-color: #222 !important;
