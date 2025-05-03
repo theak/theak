@@ -70,7 +70,7 @@ class App extends Component {
                   <table><tbody>
                     <tr>
                       <td><img className="icon" src="/ic/sc-cloud.svg" style={{opacity: 0.9, filter: 'grayscale(100%) contrast(10%)'}}/></td>
-                      <td><a href="https://scaledcognition.com/">Scaled Cognition</a> builds specialized agentic LLMs for enterprise use cases that behave reliably and deterministically.</td>
+                      <td>At <a href="https://scaledcognition.com/">Scaled Cognition</a>, we build specialized agentic LLMs for enterprises that follow policies and perform actions reliably and deterministically.</td>
                     </tr>
                   </tbody></table>
                 </CardText>
