@@ -39,11 +39,11 @@ class App extends Component {
             <h3>Product Manager • Software Engineer • Beat Maker</h3>
             <div className="flexbox">
             <div className="hello">
-              Hello! I'm a Product Manager at Google working on Gboard. This is my website.
+              Hello! I'm a Product Manager, currently at Scaled Cognition. This is my website.
             </div>
             <div className="photo">
               <MuiThemeProvider>
-                <Avatar src="/ak.jpg" size={200}/>
+                <Avatar src="/aks.jpg" size={200}/>
               </MuiThemeProvider>
             </div>
             </div>
@@ -63,17 +63,29 @@ class App extends Component {
           
           <SwipeableViews index={this.state.tabIndex} onChangeIndex={this.handleChange}>
             <div className="content">
+            <img className="big logo" src="/sc.svg"/>
+              <Card className="card">
+                <CardTitle className="cardTitle" title="Vice President of Product" />
+                <CardText className="cardText">
+                  <table><tbody>
+                    <tr>
+                      <td><img className="icon" src="/ic/sc-cloud.svg" style={{opacity: 0.9, filter: 'grayscale(100%) contrast(10%)'}}/></td>
+                      <td><a href="https://scaledcognition.com/">Scaled Cognition</a> builds specialized agentic LLMs for enterprise use cases that behave reliably and deterministically.</td>
+                    </tr>
+                  </tbody></table>
+                </CardText>
+              </Card><br/><br/>
+
               <img className="logo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"/>
               <Card className="card">
-                <CardTitle className="cardTitle" title="Gboard" />
+                <CardTitle className="cardTitle" title="Android Input / Gboard" />
                 <CardText className="cardText">
                   <table><tbody>
                     <tr>
                       <td><Keyboard className="icon"/></td>
-                      <td>I currently work on the Gboard team. My aim is to build a best-in-class input experience on&nbsp;
-                        <a href="https://play.google.com/store/apps/details?id=com.google.android.inputmethod.latin&hl=en_US">Android</a>
-                        &nbsp;and&nbsp;
-                        <a href="https://itunes.apple.com/us/app/gboard/id1091700242?mt=8">iOS</a>.</td>
+                      <td>I led <a href="https://play.google.com/store/apps/details?id=com.google.android.inputmethod.latin">Gboard on Android</a>, pioneering cutting-edge AI, ML, and LLMs to make input faster, more powerful, and expressive across modalities and languages. I managed 5 PMs and worked alongside 100+ engineers, ML researchers, and UX designers.
+                      <br/><br/>
+                      Drove autocorrection improvements through language modeling breakthroughs and A/B experiments, revamped <a href="https://www.tomsguide.com/news/pixel-6s-assistant-voice-typing-shows-off-tensor-at-its-best-heres-how-it-works">voice typing</a>, and created Android's first LLM features like <a href="https://www.androidpolice.com/gboard-proofread-ai-beta/">proofread</a> and <a href="https://developer.android.com/gboard-smart-reply">smart replies</a>.</td>
                     </tr>
                   </tbody></table>
                 </CardText>
@@ -146,7 +158,7 @@ class App extends Component {
                   <table><tbody>
                     <tr>
                       <td><img className="icon" src="https://www.gstatic.com/images/icons/material/system/2x/settings_black_48dp.png"/></td>
-                      <td>First hire at <a href="https://captricity.com/">Captricity</a>. Built a system to automate data entry of paper forms using mechanical turk.</td>
+                      <td>First engineering hire at <a href="https://captricity.com/">Captricity</a>. Built a system to automate data entry of paper forms using mechanical turk.</td>
                     </tr>
                   </tbody></table>
                 </CardText>
@@ -202,31 +214,40 @@ class App extends Component {
                   </tbody></table>
                 </CardText>
               </Card><br/>
+
               <Card className="card">
-                <CardTitle className="cardTitle" title="iWantTheTime.com" />
-                <CardMedia style={{textAlign: 'center'}}>
-                  <a href="https://www.iWantTheTime.com/"><img className="ss" src="/ic/iwtt.png"/></a>
-                </CardMedia>
+                <CardTitle className="cardTitle" title="StoveML" />
                 <CardText className="cardText">
                   <table><tbody>
                     <tr>
-                      <td><a href="https://www.iWantTheTime.com">iWantTheTime.com</a> lets you track time and weather around the world. Uses React, IP Geolocation, Google Places APIs, and material design.</td>
+                      <td><img className="icon" style={{opacity: 1.0}} src="/ic/stove.svg"/></td>
+                      <td><a href="https://github.com/theak/stoveml">StoveML</a> uses a custom visual ML model trained using FastAI / PyTorch to track whether or not a stove is on, based on training data from a camera pointing at the stove, then sends that state to Home Assistant.</td>
                     </tr>
                   </tbody></table>
                 </CardText>
               </Card><br/>
               <Card className="card">
-                <CardTitle className="cardTitle" title="SensorMusic" />
+                <CardTitle className="cardTitle" title="Go" />
+                <CardText className="cardText">
+                  <table><tbody>
+                    <tr>
+                      <td><img className="icon" style={{opacity: 1.0}} src="/ic/link.svg"/></td>
+                      <td><a href="https://github.com/theak/go">Go</a> is a handy, self hostable URL shortener for short custom go/ links within your local network or enterprise. Packaged as a Docker container for easy deployment.</td>
+                    </tr>
+                  </tbody></table>
+                </CardText>
+              </Card><br/>
+              <Card className="card">
+                <CardTitle className="cardTitle" title="My GitHub" />
                 <CardText className="cardText">
                   <table><tbody>
                     <tr>
                       <td><img className="icon" style={{opacity: 1.0}} src="/ic/music.png"/></td>
-                      <td><a href="https://github.com/theak/sensormusic">SensorMusic</a> is an Android app for using the sensors on your phone (accel, gyro, light, mag) as a MIDI controller to make music.</td>
+                      <td>Check out <a href="https://github.com/theak/">my GitHub</a> for more stuff. I like hacking on things related to home automation, embedded systems, custom midi controllers, and machine learning.</td>
                     </tr>
                   </tbody></table>
                 </CardText>
               </Card><br/>
-              
               <Card className="card">
                 <CardTitle className="cardTitle" title="Beat Maker" />
                 <CardText className="cardText">
