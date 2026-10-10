@@ -62,9 +62,15 @@ def main():
             'duration': round(t['duration_seconds']),
             'url': t['stream_url'],
             'art': art,
+            'plays': (t.get('stats_at_archive') or {}).get('plays') or 0,
+            'uploaded_at': t['uploaded_at'],
         })
 
-    tracks.reverse()  # newest first
+    # Tracks with cover art first, then most played, then newest.
+    tracks.sort(key=lambda t: t['uploaded_at'], reverse=True)
+    tracks.sort(key=lambda t: (t['art'] is None, -t['plays']))
+    for t in tracks:
+        del t['plays'], t['uploaded_at']
     with open(DATA_FILE, 'w') as f:
         json.dump(tracks, f, indent=1, ensure_ascii=False)
         f.write('\n')

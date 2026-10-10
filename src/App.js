@@ -262,7 +262,7 @@ class App extends Component {
                   <table><tbody>
                     <tr>
                       <td><img className="icon" style={{opacity: 1.0}} src="https://lh3.googleusercontent.com/p7L13rD58bcY0HZ1gczQ0C-BqNqRTefFI3fbxIe9Qid4LPBDiTo0EzDTHruagjHj3HWy=w104-rw"/></td>
-                      <td>I produce beats! Check out my <a href="https://soundcloud.com/themostcrispy">SoundCloud</a> and <a href="https://open.spotify.com/artist/6sSpZqnegfEueyuiwxteBU">Spotify</a>, or listen to everything right here.</td>
+                      <td>I produce beats! Check out my <a href="https://soundcloud.com/themostcrispy">SoundCloud</a> and <a href="https://open.spotify.com/artist/6sSpZqnegfEueyuiwxteBU">Spotify</a>.</td>
                     </tr>
                   </tbody></table>
                   <Beats/>
