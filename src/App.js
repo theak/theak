@@ -13,6 +13,7 @@ import CloudCircle from 'material-ui/svg-icons/file/cloud-circle';
 import CompareArrows from 'material-ui/svg-icons/action/compare-arrows';
 import Print from 'material-ui/svg-icons/action/print';
 import SvgIcon from 'material-ui/SvgIcon';
+import Beats from './Beats';
 import './App.css';
 
 const GitHubIcon = (props) => (
@@ -261,9 +262,10 @@ class App extends Component {
                   <table><tbody>
                     <tr>
                       <td><img className="icon" style={{opacity: 1.0}} src="https://lh3.googleusercontent.com/p7L13rD58bcY0HZ1gczQ0C-BqNqRTefFI3fbxIe9Qid4LPBDiTo0EzDTHruagjHj3HWy=w104-rw"/></td>
-                      <td>I produce beats! <a href="https://soundcloud.com/themostcrispy">Check out my Soundcloud</a>. </td>
+                      <td>I produce beats! Check out my <a href="https://soundcloud.com/themostcrispy">SoundCloud</a> and <a href="https://open.spotify.com/artist/6sSpZqnegfEueyuiwxteBU">Spotify</a>, or listen to everything right here.</td>
                     </tr>
                   </tbody></table>
+                  <Beats/>
                 </CardText>
               </Card><br/>
             </div>
