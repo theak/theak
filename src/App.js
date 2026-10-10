@@ -12,7 +12,15 @@ import DirectionsRun from 'material-ui/svg-icons/maps/directions-run';
 import CloudCircle from 'material-ui/svg-icons/file/cloud-circle';
 import CompareArrows from 'material-ui/svg-icons/action/compare-arrows';
 import Print from 'material-ui/svg-icons/action/print';
+import SvgIcon from 'material-ui/SvgIcon';
+import Beats from './Beats';
 import './App.css';
+
+const GitHubIcon = (props) => (
+  <SvgIcon {...props} viewBox="0 0 16 16">
+    <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/>
+  </SvgIcon>
+);
 
 //const localKey = 'tabIndex';
 const hashes = ['main-projects', 'side-projects'];
@@ -201,6 +209,17 @@ class App extends Component {
             </div>
             <div className="content">
               <Card className="card">
+                <CardTitle className="cardTitle" title="My GitHub" />
+                <CardText className="cardText">
+                  <table><tbody>
+                    <tr>
+                      <td><GitHubIcon className="icon"/></td>
+                      <td>Check out <a href="https://github.com/theak/">my GitHub</a> for all my projects. I like hacking on things related to home automation, embedded systems, custom midi controllers, and machine learning.</td>
+                    </tr>
+                  </tbody></table>
+                </CardText>
+              </Card><br/>
+              <Card className="card">
                 <CardTitle className="cardTitle" title="JustBeamIt" />
                 <CardMedia style={{textAlign: 'center'}}>
                   <a href="https://justbeamit.com/"><img className="ss" src="/ic/jbi.png"/></a>
@@ -238,25 +257,15 @@ class App extends Component {
                 </CardText>
               </Card><br/>
               <Card className="card">
-                <CardTitle className="cardTitle" title="My GitHub" />
-                <CardText className="cardText">
-                  <table><tbody>
-                    <tr>
-                      <td><img className="icon" style={{opacity: 1.0}} src="/ic/music.png"/></td>
-                      <td>Check out <a href="https://github.com/theak/">my GitHub</a> for more stuff. I like hacking on things related to home automation, embedded systems, custom midi controllers, and machine learning.</td>
-                    </tr>
-                  </tbody></table>
-                </CardText>
-              </Card><br/>
-              <Card className="card">
                 <CardTitle className="cardTitle" title="Beat Maker" />
                 <CardText className="cardText">
                   <table><tbody>
                     <tr>
                       <td><img className="icon" style={{opacity: 1.0}} src="https://lh3.googleusercontent.com/p7L13rD58bcY0HZ1gczQ0C-BqNqRTefFI3fbxIe9Qid4LPBDiTo0EzDTHruagjHj3HWy=w104-rw"/></td>
-                      <td>I produce beats! <a href="https://soundcloud.com/themostcrispy">Check out my Soundcloud</a>. </td>
+                      <td>I produce beats! Check out my <a href="https://soundcloud.com/themostcrispy">SoundCloud</a> and <a href="https://open.spotify.com/artist/6sSpZqnegfEueyuiwxteBU">Spotify</a>.</td>
                     </tr>
                   </tbody></table>
+                  <Beats/>
                 </CardText>
               </Card><br/>
             </div>
