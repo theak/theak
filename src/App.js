@@ -86,7 +86,7 @@ class App extends Component {
 
               <img className="logo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"/>
               <Card className="card">
-                <CardTitle className="cardTitle" title="Android Input / Gboard" />
+                <CardTitle className="cardTitle" title="Group Product Manager" />
                 <CardText className="cardText">
                   <table><tbody>
                     <tr>
